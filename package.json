@@ -1,0 +1,31 @@
+{
+  "name": "cik-ts-movie-lists",
+  "version": "1.0.0",
+  "description": "An application for listing movies.",
+  "main": "wallaby.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/en-dev/cik-ts-movie-lists.git"
+  },
+  "directories": {
+    "test": "src"
+  },
+  "scripts": {
+    "test": "ts-node node_modules/jasmine/bin/jasmine \"src/**/*Test.ts\""
+  },
+  "author": "eliasnorrby",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/jasmine": "^2.8.9",
+    "@types/node": "^10.12.2",
+    "jasmine": "^3.3.0",
+    "ts-node": "^7.0.1"
+  },
+  "dependencies": {
+    "typescript": "^3.1.1"
+  },
+  "bugs": {
+    "url": "https://github.com/en-dev/cik-ts-movie-lists/issues"
+  },
+  "homepage": "https://github.com/en-dev/cik-ts-movie-lists#readme"
+}
