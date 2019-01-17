@@ -12,7 +12,7 @@ export class MovieCollection {
         this._storage.store(movie);
     }
 
-    public get movies(): Movie[] {
+    public get movies(): Promise<Movie[]> {
         return this._storage.all();
     }
 }

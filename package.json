@@ -11,7 +11,7 @@
     "test": "src"
   },
   "scripts": {
-    "test": "ts-node node_modules/jasmine/bin/jasmine \"src/**/*Test.ts\""
+    "test": "ts-node node_modules/jasmine/bin/jasmine \"src/**/*.test.ts\""
   },
   "author": "eliasnorrby",
   "license": "ISC",

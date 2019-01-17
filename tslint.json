@@ -7,7 +7,8 @@
     "rules": {
         "variable-name": [true, "allow-leading-underscore"],
         "member-access": false,
-        "arrow-parens": [true, "ban-single-arg-parens"]
+        "arrow-parens": [true, "ban-single-arg-parens"],
+        "indent": [true, "spaces", 2]
     },
     "rulesDirectory": []
 }

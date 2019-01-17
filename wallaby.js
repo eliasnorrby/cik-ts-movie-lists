@@ -6,12 +6,17 @@ module.exports = function(wallaby) {
     files: [
       'src/**/*.ts',
       '!src/**/*Test.ts',
+      '!src/**/*.test.ts',
+      'settings.local.txt',
+      'database.txt',
       { pattern: 'src/**/*input.ts', instrument: false },
       { pattern: 'src/**/*.txt', instrument: false }
     ],
     tests: [
       'test/**/*Test.ts',
+      'test/**/*.test.ts',
       'src/**/*Test.ts',
+      'src/**/*.test.ts',
     ],
     // compilers: {
     //   '**/*.ts?(x)': wallaby.compilers.typeScript(compilerOptions),

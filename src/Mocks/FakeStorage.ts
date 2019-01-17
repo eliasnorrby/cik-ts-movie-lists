@@ -17,6 +17,6 @@ export class FakeStorage implements IStorage<Movie> {
     }
 
     all() {
-        return this._movies;
+        return Promise.resolve(this._movies);
     }
 }

@@ -1,6 +1,6 @@
 import { IStorage } from "../Core/IStorage";
 import { Movie } from "../Core/Movie";
-import { IHttpClient } from "./IHttpClient";
+import { IHttpClient } from "./HttpClient/IHttpClient";
 
 export class ApiConsumer {
     _httpClient: IHttpClient;

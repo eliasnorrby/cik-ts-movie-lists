@@ -21,7 +21,11 @@ describe("ApiConsumer", () => {
 
     it("should store movies in the db after syncing", async done => {
         await consumer.syncMovies();
-        expect(consumer._storage.all().length).toBe(20);
+        const numberOfMovies = await consumer._storage.all().then( movies => {
+          return movies.length;
+        });
+
+        expect(numberOfMovies).toBe(20);
 
         done();
     });

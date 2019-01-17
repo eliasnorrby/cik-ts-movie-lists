@@ -1,5 +1,5 @@
 import { readFileSync } from "fs";
-import { IHttpClient } from "../ConsumerApi/IHttpClient";
+import { IHttpClient } from "../ConsumerApi/HttpClient/IHttpClient";
 
 export class FakeHttpClient implements IHttpClient {
     get(url: string): Promise<string> {
