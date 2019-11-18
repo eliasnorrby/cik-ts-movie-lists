@@ -5,6 +5,6 @@ describe("Settings", () => {
 
   it("Should get connection", () => {
     settings = new Settings("settings.local.txt");
-    expect();
+    expect(settings.connectionString).toBe("database.txt");
   });
 });

@@ -4,6 +4,6 @@ export class Settings {
   connectionString: string;
 
   constructor(configName: string) {
-    this.connectionString = readFileSync(configName).toString().split(" ")[1];
+    this.connectionString = readFileSync(configName).toString().split(": ")[1];
   }
 }
